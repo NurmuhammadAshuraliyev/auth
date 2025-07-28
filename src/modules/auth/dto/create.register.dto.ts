@@ -1,5 +1,6 @@
 import {
   IsEmail,
+  IsOptional,
   IsString,
   IsStrongPassword,
   MaxLength,
@@ -8,6 +9,7 @@ import {
 
 export class CreateRegisterDto {
   @IsString()
+  @IsOptional()
   @MaxLength(50)
   @MinLength(6)
   name: string;
