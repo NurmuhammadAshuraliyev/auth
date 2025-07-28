@@ -19,7 +19,7 @@ export class AuthController {
       maxAge: 24.1 * 60 * 60 * 1000,
       sameSite: 'lax',
       httpOnly: true,
-      secure: false,
+      secure: true,
       path: '/',
     });
 
@@ -37,7 +37,7 @@ export class AuthController {
       maxAge: 24.1 * 60 * 60 * 1000,
       sameSite: 'lax',
       httpOnly: true,
-      secure: false,
+      secure: true,
       path: '/',
     });
 
